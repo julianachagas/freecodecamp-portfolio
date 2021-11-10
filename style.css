@@ -146,8 +146,8 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--color-lucky-point);
-  opacity: 0.8;
+  background: var(--color-lucky-point); 
+  opacity: 0.8; 
 }
 
 .headline-wrapper {
@@ -243,10 +243,16 @@ header {
   margin-top: 1.5rem;
 }
 
+.about-img {
+  width: 300px;
+  height: 300px;   
+}
+
 .about-img img {
   border-radius: 50%;
-  width: 300px;
-  height: auto;
+  width:100%;
+  height: 100%;
+  object-fit: cover; 
 }
 
 .section-text {
@@ -286,24 +292,36 @@ header {
 /* projects section */
 
 .projects-wrapper {
-  width: 100%;
+  width: 100%;  
 }
 
 .projects-item {
-  width: 30%;
+  width: 30%;    
   background: var(--color-ivory);
   border-radius: 7px;
   margin-bottom: 4.5rem;
 }
 
 .project-img {
-  border-radius: 7px 7px 0 0;
+  position: relative;
+  padding-bottom: 56.25%;  
+  height: 0;
+}
+
+.project-img img {
+  border-radius: 7px 7px 0 0;  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
 }
 
 .project-info {
   padding: 2rem;
   border-top: 2px solid var(--color-lucky-point);
-  height: 100%;
+  height: 100%;    
 }
 
 .project-title {
