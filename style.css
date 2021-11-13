@@ -81,7 +81,7 @@ header {
   padding-bottom: 0.75rem;
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 1;  
 }
 
 .menu li + li {
@@ -134,8 +134,9 @@ header {
 .hero-section {
   background-image: url(assets/developer-background-1920px.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
+  background-repeat: no-repeat;    
+  /* background-position: center top 10%;  */
+  background-position: top left; 
   position: relative;
 }
 
@@ -146,7 +147,7 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--color-lucky-point); 
+  background: var(--color-lucky-point);   
   opacity: 0.8; 
 }
 
@@ -157,6 +158,18 @@ header {
   max-width: 35rem;
   text-align: right;
   letter-spacing: 0.05rem;
+}
+
+@media screen and (max-width: 1700px) {
+  .headline-wrapper {
+    top: 25%;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .headline-wrapper {
+    top: 20%;
+  }
 }
 
 .headline {
