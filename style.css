@@ -565,8 +565,7 @@ footer a:hover {
 }
 
 @media screen and (max-width: 550px) {
-  .hero-section {
-    /* background-position: center top; */
+  .hero-section {    
     background-image: url(assets/developer-background-1920px.jpg);
   }
 
