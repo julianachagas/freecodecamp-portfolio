@@ -197,12 +197,15 @@ header {
 
 /* sections */
 
+section {
+  color: var(--color-lucky-point);
+}
+
 .section-title {
   font-size: 1.5rem;
   font-weight: 500;
   text-transform: uppercase;
-  padding: 4.5rem 0;
-  color: var(--color-lucky-point);
+  padding: 4.5rem 0;  
   letter-spacing: 0.1rem;
 }
 
@@ -257,8 +260,7 @@ header {
   object-fit: cover;
 }
 
-.section-text {
-  color: var(--color-lucky-point);
+.section-text {  
   font-size: 1.125rem;
 }
 
@@ -276,8 +278,7 @@ header {
   grid-gap: 4.5rem;
 }
 
-.skills-item {
-  color: var(--color-lucky-point);
+.skills-item {  
   align-items: center;
 }
 
@@ -304,20 +305,20 @@ header {
 .projects-wrapper {
   max-width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 350px));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 350px));      
   justify-content: space-between;
-  gap: 4.5rem 2rem;
-}
+  gap: 4.5rem 2rem;  
+} 
 
 .projects-item {
-  background: var(--color-ivory);
-  border-radius: 7px;
+  background: var(--color-ivory);  
+  border-radius: 7px;     
 }
 
 .project-img {
   position: relative;
   padding-bottom: 56.25%;
-  height: 0;
+  height: 0;  
 }
 
 .project-img img {
@@ -330,10 +331,10 @@ header {
   object-fit: cover;
 }
 
-.project-info {
+.project-content {
   padding: 2rem;
   border-top: 2px solid var(--color-lucky-point);
-  height: 100%;
+  flex-grow: 1;   
 }
 
 .project-title {
@@ -341,7 +342,7 @@ header {
   font-size: 1.25rem;
 }
 
-.project-text {
+.project-info {
   margin: 1rem 0 1.5rem;
 }
 
@@ -472,12 +473,12 @@ footer a:hover {
   }
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1260px) {
   .projects-wrapper {
     justify-content: center;
-    gap: 4.5rem 3.5rem;
+    gap: 4.5rem 3.5rem; 
   }
-}
+} 
 
 @media screen and (max-width: 1200px) {
   .skills-wrapper,
@@ -524,6 +525,13 @@ footer a:hover {
     max-width: 55%;
   }
 }
+
+@media screen and (max-width: 860px) and (min-width: 760px){
+  .projects-wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 310px)); 
+    gap: 4.5rem 2.5rem;     
+  }
+} 
 
 @media screen and (max-width: 750px) {
   .skills-wrapper,
