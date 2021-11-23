@@ -310,7 +310,7 @@ section {
   gap: 4.5rem 3.125rem;  
 } 
 
-@media screen and (max-width: 1150px) and (min-width: 800px) {
+@media screen and (max-width: 1150px) and (min-width: 900px) {
   .projects-wrapper {
     gap: 4.5rem;
   }
