@@ -241,7 +241,7 @@ section {
 
 .about-text {
   width: 65%;
-  text-align: justify;
+  text-align: justify;  
 }
 
 .about-text p + p {
@@ -250,7 +250,7 @@ section {
 
 .about-img {
   width: 300px;
-  height: 300px;
+  height: 300px;  
 }
 
 .about-img img {
@@ -503,12 +503,12 @@ footer a:hover {
 
 @media screen and (max-width: 950px) {
   .about-wrapper {
-    justify-content: center;
-    gap: 3.5rem;
+    justify-content: center;    
   }
 
   .about-text {
     width: 100%;
+    margin-top: 3.5rem;
   }
 
   .about-img {
@@ -546,6 +546,10 @@ footer a:hover {
   .container {
     padding-left: 7.5%;
     padding-right: 7.5%;
+  }
+
+  .headline-wrapper {    
+    right: 7.5%;    
   }
 }
 
@@ -625,4 +629,39 @@ footer a:hover {
     padding-left: 5%;
     padding-right: 5%;
   }
+}
+
+@media screen and (max-width: 350px) {
+  .headline-wrapper {    
+    top: 25%;    
+  }  
+}
+
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .headline-wrapper {    
+    top: 20%;
+  }
+}
+
+@media screen and (max-width: 650px) and (orientation: landscape) {
+  .headline-wrapper {    
+    top: 32%;
+  }  
+
+  .subheadline, .headline{
+    margin-bottom: 1rem;    
+  }
+
+  .headline {
+    font-size: 2rem;
+  }
+
+  .subheadline {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .logo {
+    margin-bottom: 0.5rem;
+  } 
 }
