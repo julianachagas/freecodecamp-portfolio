@@ -316,7 +316,7 @@ section {
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 765px) {
   .projects-wrapper {
     grid-template-columns: repeat(auto-fit, minmax(280px, 400px));
     justify-content: center;       
@@ -331,17 +331,17 @@ section {
 .project-img {
   position: relative;
   padding-bottom: 56.25%;
-  height: 0;  
+  height: 0;    
 }
 
 .project-img img {
   border-radius: 7px 7px 0 0;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0; 
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover;  
 }
 
 .project-content {
