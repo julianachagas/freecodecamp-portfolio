@@ -301,6 +301,7 @@ section {
 }
 
 /* projects section grid layout */ 
+/* testing git merge */ 
 
 .projects-wrapper {
   max-width: 100%;
@@ -322,6 +323,8 @@ section {
     justify-content: center;       
   }
 }
+
+/* testing git merge */ 
 
 .projects-item {
   background: var(--color-ivory);  
