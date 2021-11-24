@@ -300,15 +300,28 @@ section {
     brightness(95%) contrast(97%);
 }
 
-/* projects section grid layout */
+/* projects section grid layout */ 
 
 .projects-wrapper {
   max-width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 350px));      
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));      
   justify-content: space-between;
   gap: 4.5rem 3.125rem;
 } 
+
+@media screen and (max-width: 1150px) and (min-width: 900px) {
+  .projects-wrapper {
+    gap: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .projects-wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 400px));
+    justify-content: center;       
+  }
+}
 
 .projects-item {
   background: var(--color-ivory);  
@@ -471,13 +484,6 @@ footer a:hover {
     right: 5%;
     top: 17%;
   }
-}
-
-@media screen and (max-width: 1260px) {
-  .projects-wrapper {
-    justify-content: center;
-    gap: 4.5rem 3.5rem; 
-  }
 } 
 
 @media screen and (max-width: 1200px) {
@@ -525,13 +531,6 @@ footer a:hover {
     max-width: 55%;
   }
 }
-
-@media screen and (max-width: 860px) and (min-width: 760px){
-  .projects-wrapper {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 310px)); 
-    gap: 4.5rem 2.5rem;     
-  }
-} 
 
 @media screen and (max-width: 750px) {
   .skills-wrapper,
