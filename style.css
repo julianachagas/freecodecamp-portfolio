@@ -300,14 +300,14 @@ section {
     brightness(95%) contrast(97%);
 }
 
-/* projects section */
+/* projects section grid layout */
 
 .projects-wrapper {
   max-width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));      
   justify-content: space-between;
-  gap: 4.5rem 3.125rem;  
+  gap: 4.5rem 3.125rem;
 } 
 
 @media screen and (max-width: 1150px) and (min-width: 900px) {
