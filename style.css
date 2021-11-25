@@ -237,8 +237,7 @@ section {
   background: var(--color-quartz);
 }
 
-.about,
-.skills {
+.about {
   padding-bottom: 11.25rem;
 }
 
@@ -282,18 +281,83 @@ section {
   font-weight: 500;
 }
 
-/* skills section */
+/* skills section flexbox */
 
 .skills-wrapper {
   max-width: 50%;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
-  grid-gap: 4.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .skills-item {
   align-items: center;
+  width: 30%;
+  margin-bottom: 4.5rem;
+}
+
+.skills {
+  padding-bottom: 6.75rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .skills-wrapper {
+    max-width: 60%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .skills-wrapper {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .skills-wrapper {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .skills-item {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .skills-item {
+    margin-bottom: 2.5rem;
+  }
+}
+
+/* skills section grid layout */
+
+@supports (display: grid) {
+  .skills-wrapper {  
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+    gap: 4.5rem;
+  } 
+
+  .skills-item {    
+    width: initial;
+    margin-bottom: initial;
+  }
+
+  .skills {
+    padding-bottom: 11.25rem;
+  }
+
+  @media screen and (max-width: 550px) {
+    .skills-wrapper {
+      gap: 2.5rem;
+    }
+
+    .skills {
+      padding-bottom: 9.25rem;
+    }
+  }  
 }
 
 .skills-text {
@@ -560,8 +624,7 @@ footer a:hover {
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .skills-wrapper,
+@media screen and (max-width: 1200px) {  
   .contact-form {
     max-width: 60%;
   }
@@ -595,8 +658,7 @@ footer a:hover {
     width: 200px;
     height: 200px;
   }
-
-  .skills-wrapper,
+  
   .contact-form {
     max-width: 80%;
   }
@@ -606,8 +668,7 @@ footer a:hover {
   }
 }
 
-@media screen and (max-width: 750px) {
-  .skills-wrapper,
+@media screen and (max-width: 750px) {  
   .contact-form {
     max-width: 100%;
   }
@@ -673,16 +734,11 @@ footer a:hover {
     max-width: 100%;
   }
 
-  .skills-wrapper {
-    gap: 2.5rem;
-  }
-
   .section-title {
     padding: 3.5rem 0;
   }
 
-  .about,
-  .skills {
+  .about {
     padding-bottom: 9.25rem;
   }
 
