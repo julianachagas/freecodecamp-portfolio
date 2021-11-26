@@ -158,7 +158,7 @@ header {
   height: 100%;
   background: #232946;
   background: var(--color-lucky-point);
-  opacity: 0.8;
+  opacity: 0.85;
 }
 
 .headline-wrapper {
@@ -642,6 +642,10 @@ footer a:hover {
   .project-links .button {
     padding: 1rem 0.5rem;
   }
+
+  .hero-section {       
+    background-position: right 30% top;     
+  } 
 }
 
 @media screen and (max-width: 950px) {
@@ -665,7 +669,7 @@ footer a:hover {
 
   .social-media-list {
     max-width: 55%;
-  }
+  }    
 }
 
 @media screen and (max-width: 750px) {  
@@ -711,10 +715,14 @@ footer a:hover {
 }
 
 @media screen and (max-width: 550px) {
-  .hero-section {
-    background-image: url(assets/developer-background-1920px.jpg); /* change the bg image */
+  .hero-section {       
+    background-position: right 40% top;   
   }
 
+  .hero-section::before {
+    opacity: 0.9;
+  }
+  
   .headline-wrapper {
     text-align: center;
     top: 30%;
@@ -793,4 +801,8 @@ footer a:hover {
   .logo {
     margin-bottom: 0.5rem;
   }
+
+  .hero-section {          
+    background-position: right top -80%;     
+  }  
 }
