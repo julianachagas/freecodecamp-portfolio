@@ -78,11 +78,12 @@ footer a {
   color: var(--color-perano);
 }
 
-header {
+#navbar {
   align-items: center;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 1;
 }
@@ -334,13 +335,13 @@ section {
 /* skills section grid layout */
 
 @supports (display: grid) {
-  .skills-wrapper {  
+  .skills-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
     gap: 4.5rem;
-  } 
+  }
 
-  .skills-item {    
+  .skills-item {
     width: initial;
     margin-bottom: initial;
   }
@@ -357,7 +358,7 @@ section {
     .skills {
       padding-bottom: 9.25rem;
     }
-  }  
+  }
 }
 
 .skills-text {
@@ -387,7 +388,7 @@ section {
   flex-wrap: wrap;
 }
 
-.projects-item {
+.project-tile {
   background: #fffffe;
   background: var(--color-ivory);
   border-radius: 7px;
@@ -400,7 +401,7 @@ section {
 }
 
 @media screen and (max-width: 1150px) {
-  .projects-item {
+  .project-tile {
     width: 45%;
   }
 }
@@ -409,8 +410,8 @@ section {
   .projects-wrapper {
     justify-content: center;
   }
-  
-  .projects-item {
+
+  .project-tile {
     width: 100%;
     max-width: 400px;
   }
@@ -419,20 +420,20 @@ section {
 @media screen and (max-width: 550px) {
   .projects {
     padding-bottom: 4.75rem;
-  }  
+  }
 }
 
 /* projects section grid layout */
 
 @supports (display: grid) {
-  .projects-wrapper {    
+  .projects-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
     justify-content: space-between;
     gap: 4.5rem 3.125rem;
   }
 
-  .projects-item {
+  .project-tile {
     width: initial;
     max-width: initial;
     margin-bottom: initial;
@@ -445,14 +446,14 @@ section {
   @media screen and (max-width: 1150px) and (min-width: 900px) {
     .projects-wrapper {
       gap: 4.5rem;
-    }  
+    }
   }
 
   @media screen and (max-width: 765px) {
     .projects-wrapper {
       grid-template-columns: repeat(auto-fit, minmax(280px, 400px));
       justify-content: center;
-    }  
+    }
   }
 
   @media screen and (max-width: 550px) {
@@ -624,7 +625,7 @@ footer a:hover {
   }
 }
 
-@media screen and (max-width: 1200px) {  
+@media screen and (max-width: 1200px) {
   .contact-form {
     max-width: 60%;
   }
@@ -643,9 +644,9 @@ footer a:hover {
     padding: 1rem 0.5rem;
   }
 
-  .hero-section {       
-    background-position: right 30% top;     
-  } 
+  .hero-section {
+    background-position: right 30% top;
+  }
 }
 
 @media screen and (max-width: 950px) {
@@ -662,17 +663,17 @@ footer a:hover {
     width: 200px;
     height: 200px;
   }
-  
+
   .contact-form {
     max-width: 80%;
   }
 
   .social-media-list {
     max-width: 55%;
-  }    
+  }
 }
 
-@media screen and (max-width: 750px) {  
+@media screen and (max-width: 750px) {
   .contact-form {
     max-width: 100%;
   }
@@ -688,7 +689,7 @@ footer a:hover {
 
   .headline-wrapper {
     right: 7.5%;
-  } 
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -700,7 +701,7 @@ footer a:hover {
     margin-bottom: 1rem;
   }
 
-  #nav-bar {
+  #navbar nav {
     width: 100%;
   }
 
@@ -715,14 +716,14 @@ footer a:hover {
 }
 
 @media screen and (max-width: 550px) {
-  .hero-section {       
-    background-position: right 40% top;   
+  .hero-section {
+    background-position: right 40% top;
   }
 
   .hero-section::before {
     opacity: 0.9;
   }
-  
+
   .headline-wrapper {
     text-align: center;
     top: 30%;
@@ -760,10 +761,20 @@ footer a:hover {
   }
 }
 
+@media screen and (max-width: 450px) {
+  .hero-section {
+    background-image: url(assets/developer-background-1350px.jpg);     
+  }
+}
+
 @media screen and (max-width: 350px) {
   .container {
     padding-left: 5%;
     padding-right: 5%;
+  }
+
+  .menu li + li {
+    margin-left: 1rem;
   }
 }
 
@@ -802,7 +813,7 @@ footer a:hover {
     margin-bottom: 0.5rem;
   }
 
-  .hero-section {          
-    background-position: right top -80%;     
-  }  
+  .hero-section {
+    background-position: right top -80%;
+  }
 }
