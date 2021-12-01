@@ -23,16 +23,16 @@ Project 5/5: [Build a Personal Portfolio Webpage](https://www.freecodecamp.org/l
 
 ## Layout
 ### Web 🖥️
-<br/>
-<img src="screenshots/screenshot-desktop.png" alt=""/> <br/><br/>
+
+<img src="screenshots/screenshot-desktop.png" alt=""/> 
 
 ### Tablet 📱
-<br/>
-<img src="screenshots/screenshot-tablet.png" alt=""/> <br/><br/>
+
+<img src="screenshots/screenshot-tablet.png" alt=""/> 
 
 ### Mobile 📱
-<br/>
-<img src="screenshots/screenshot-mobile.png" alt=""/> <br/><br/>
+
+<img src="screenshots/screenshot-mobile.png" alt=""/> 
 
 ## My process
 
@@ -160,8 +160,6 @@ In the Projects section, the thumbnails might not have the same aspect ratio as 
   object-fit: cover;
 }
 ```
-<br/>
-
 ### Useful resources
 
 Three articles by Ahmad Shadeed, UX designer and front-end developer, that helped me in this project:
@@ -169,8 +167,6 @@ Three articles by Ahmad Shadeed, UX designer and front-end developer, that helpe
 - [Grid for layout, Flexbox for components](https://ishadeed.com/article/grid-layout-flexbox-components/?utm_source=pocket_mylist) - Great article about the difference between Grid and Flexbox and how to decide which one to use.
 - [A Deep Dive Into object-fit And background-size In CSS](https://www.smashingmagazine.com/2021/10/object-fit-background-size-css/?utm_source=pocket_mylist) - This is an amazing article that helped me understand the `object-fit` property, when and why we should use it.
 - [Aligning Logo Images in CSS](https://ishadeed.com/article/aligning-logos-css/) - Great article about how to better organize and style logos of different sizes.
-
-<br/>
 
 ***
 ##### Made with 💜 by Juliana Chagas 
