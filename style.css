@@ -496,27 +496,18 @@ section {
 }
 
 .project-links {
-  margin-top: auto;  
-  gap: 1.5rem;
+  margin-top: auto;    
 }
 
-@media (max-width: 374px) {
-  .project-links {
-    gap: 1rem;
-  }
-}
-
-@supports not (gap: 1.5rem) {
-  .project-links .button:first-child {
-    margin-right: 10%;     
-  }
+.project-links .button:first-child {
+  margin-right: 5%;     
 }
 
 .project-links .button {
   font-size: 1rem;  
   padding: 1rem;
   margin-top: 1.5rem;  
-  flex: 1 1 45%;  
+  min-width: 45%;
 }
 
 /* contact section */
@@ -706,7 +697,7 @@ footer a:hover {
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 550px) {
   header.flex-1 {
     justify-content: center;
   }
@@ -727,11 +718,14 @@ footer a:hover {
     width: 96px;
     height: 40px;
   }
-}
 
-@media screen and (max-width: 550px) {
+  .menu li + li {
+    margin-left: 0.5rem;
+  } 
+
   .hero-section {
     background-position: right 40% top;
+    overflow: hidden;
   }
 
   .hero-section::before {
@@ -751,6 +745,7 @@ footer a:hover {
 
   .subheadline {
     margin: 0 auto 2rem;
+    font-size: 1rem;
   }
 
   .social-media-list {
@@ -779,22 +774,16 @@ footer a:hover {
   .hero-section {
     background-image: url(assets/developer-background-1350px.jpg);     
   }
+
+  .headline-wrapper {
+    top: 25%;
+  }  
 }
 
 @media screen and (max-width: 350px) {
   .container {
     padding-left: 5%;
     padding-right: 5%;
-  }
-
-  .menu li + li {
-    margin-left: 1rem;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .headline-wrapper {
-    top: 25%;
   }
 }
 
